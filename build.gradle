@@ -1,0 +1,25 @@
+apply plugin: 'base'
+
+subprojects {
+    apply plugin: 'java'
+
+	version = rootProject.description
+
+	sourceCompatibility = '1.8'
+	[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+	repositories {
+		mavenCentral()
+	}
+
+	dependencies {
+		testCompile group:	'junit', name: 'junit', version: '4.10'
+	}
+}
+
+allprojects {
+	ext {
+		LOG4J_VERSION = '2.10.0'
+		JAVAX_JSON_VERSION = '1.1'
+	}
+}

@@ -1,0 +1,5 @@
+rootProject.name = 'notpms'
+
+include 'ppmslib'
+include 'notpms'
+

@@ -1,0 +1,11 @@
+/nbproject/private/
+**/build/
+/dist/
+/.nb-gradle/
+/.gradle/
+**/.project
+**/.settings/
+**/.classpath
+**/bin/
+/.vs/
+**/.idea/
